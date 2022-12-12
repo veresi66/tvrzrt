@@ -1,3 +1,42 @@
+<h1>A TVR Zrt tesztfeladatának megoldása</h1>
+
+A tesztfeladat Yii2 keretrendszer felhasználásával készült. 
+
+Teszteléshez az alábbi parancsokat kell kiadni (feltételezve, hogy a teszt rendszeren van valamilyen Webszerver/Php/MySQL, composer telepítve:
+
+    A webszerver gyökér könyvtárában ki kell adni a:
+
+    git clone https://github.com/veresi66/tvrzrt.git
+    cd tvrzrt
+    composer install
+
+utasításokat.
+
+Létre kell hozni egy adatbázist, majd a ***tvrzrt/config/db.php*** fájlban be kell állítani a létrehozott adatbázis hozzáférési adatait, 
+
+    'dsn' => 'mysql:host=localhost;dbname=tvrzrt', // A létrehozott adatbázis név
+    'username' => 'tvrzrt_db',                     // Olyan felhasználónév, amelyik hozzáfér az adatbázishoz
+    'password' => 'Password1',                     // A felhasználóhoz tartozó jelszó 
+
+Ezek után ki kell adni a 
+
+    php yii migrate
+
+utasítást. 
+
+
+Legjobb, ha a 
+
+    webszerver_gyökér/tvrzrt/web
+
+könyvtárra beállítunk egy virtuális szervert pl.: **tvrzrt.localhost** néven, így a böngészőben xsak a --http://tvrzrt.localhost-- címet kell beírni és már működik es a program.
+
+A bejelentkező felületen az **admin / admin** vagy a **demo / demo** felhasználónév, jelszó párossal tudunk belépni.
+
+Remélem elnyeri tetszésüket a megoldásom.
+
+------
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
