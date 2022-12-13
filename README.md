@@ -1,4 +1,4 @@
-<h1>A TVR Zrt tesztfeladatának megoldása</h1>
+<h1>A TRV Zrt tesztfeladatának megoldása</h1>
 
 A tesztfeladat Yii2 keretrendszer felhasználásával készült. 
 
